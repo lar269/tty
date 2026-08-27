@@ -1,0 +1,16 @@
+if (pos0 != NULL) {
+        
+        //заменяем '\r' на '\0', чтобы получить строку
+        *pos0 = '\0'; 
+        str=buffer;
+        strcpy(buffer+buf_len,str);//копируем в основной буфер!
+        buf_len+=pos0-str;
+        
+
+
+    }
+    else{
+        strncpy(buffer + buf_len, buffer, n); //копируем в основной буфер
+        buf_len+=n;
+
+    }  
